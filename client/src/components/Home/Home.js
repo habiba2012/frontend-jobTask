@@ -1,15 +1,17 @@
 import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import TopHeader from '../TopHeader/TopHeader';
-import CarouselBanner from '../CarouselBanner/CarouselBanner';
+import SliderBanner from '../CarouselBanner/SliderBanner';
 import VideoBanner from '../VideoBanner/VideoBanner';
+import Destination from '../GoogleMap/Destination';
 const Home = () => {
     return (
         <div className="container">
             <NavBar />
             <TopHeader />
-            <CarouselBanner />
+            <SliderBanner />
             <VideoBanner />
+            <Destination />
         </div>
     );
 };

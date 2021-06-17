@@ -1,0 +1,48 @@
+{
+  "name": "wiredelta-task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@react-google-maps/api": "^2.2.0",
+    "firebase": "^8.6.7",
+    "jwt-decode": "^3.1.2",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-bootstrap-carousel": "^4.1.1",
+    "react-bootstrap-icons": "^1.5.0",
+    "react-dom": "^17.0.2",
+    "react-google-map": "^3.1.1",
+    "react-hook-form": "^7.8.8",
+    "react-hook-form-resolvers": "0.0.1",
+    "react-hot-toast": "^2.0.0",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {
+    "video.js": "^7.12.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "author": "habiba",
+  "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "",
+  "proxy":"http://localhost:4000"
+}

@@ -1,0 +1,217 @@
+.slider-box {
+    position: relative;
+    height: 570px;
+    overflow: hidden;
+    background-color: rgba(70, 15, 2, 0.315);
+  }
+  .slider1,
+  .slider2,
+  .slider3,
+  .slider4,
+  .slider5,
+  .slider6{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .slide-img {
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: zoom-out 10s linear infinite;
+  }
+  @keyframes zoom-out {
+    100% {
+      width: 100%;
+    }
+  }
+  .text-box {
+    width: 400px;
+    position: absolute;
+    top: 12rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(80, 77, 77);
+    /* border: 1px solid red; */
+  }
+  .text-box span {
+    background-color: rgb(87, 2, 80);
+    height: 2px;
+    width: 100px;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 20px;
+    left: 0px;
+  }
+  .text-box h3 {
+    color: white;
+    font-family: "Beth Ellen", cursive;
+  }
+  .slider1 {
+    animation: slide1 15s linear infinite;
+  }
+  .slider2 {
+    animation: slide2 15s linear infinite;
+  }
+  .slider3 {
+    animation: slide3 15s linear infinite;
+  }
+  .slider4 {
+    animation: slide4 15s linear infinite;
+  }
+  .slider5 {
+    animation: slide4 15s linear infinite;
+  }
+  .slider6 {
+    animation: slide4 15s linear infinite;
+  }
+  .slider7 {
+    animation: slide4 15s linear infinite;
+  }
+  @keyframes slide1 {
+    0% {
+      visibility: visible;
+    }
+    25% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    75% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @keyframes slide2 {
+    0% {
+      visibility: hidden;
+    }
+    25% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: visible;
+    }
+    75% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+  @keyframes slide3 {
+    0% {
+      visibility: hidden;
+    }
+    25% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    75% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+  @keyframes slide4 {
+    0% {
+      visibility: hidden;
+    }
+    25% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    75% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @keyframes slide5 {
+    0% {
+      visibility: hidden;
+    }
+    25% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    75% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @keyframes slide6 {
+    0% {
+      visibility: hidden;
+    }
+    25% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    75% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  @keyframes slide7 {
+    0% {
+      visibility: hidden;
+    }
+    25% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    75% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  
+  @media (max-width: 598px) {
+    .slider-box {
+      position: relative;
+      height: 250px;
+    }
+    .slider1,
+    .slider2,
+    .slider3,
+    .slider4,
+    .slider5,
+    .slider6,
+    .slider7 {
+      transform: translateY(-5rem);
+    }
+    .text-box {
+      width: 300px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(80, 77, 77);
+    }
+  }
