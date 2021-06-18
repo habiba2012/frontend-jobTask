@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/images/logo1.png';
+import Logo from '../../assets/images/logo.png';
 import './Footer.css';
 
 const Footer = () => {

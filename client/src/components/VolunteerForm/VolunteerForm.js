@@ -44,7 +44,7 @@ const CreateProfile = () => {
     };
 
     return (
-        <Fragment>
+        <>
             <h1 className='large text-primary'>Create Your Profile</h1>
             <p className='lead'>
                 <i className='fas fa-user'></i> Let's get some information to make your
@@ -150,7 +150,7 @@ const CreateProfile = () => {
                 </div>
 
                 {displaySocialInputs && (
-                    <Fragment>
+                    <>
                         <div className='form-group social-input'>
                             <i className='fab fa-twitter fa-2x'></i>
                             <input
@@ -205,21 +205,19 @@ const CreateProfile = () => {
                                 onChange={e => onChange(e)}
                             />
                         </div>
-                    </Fragment>
+                    </>
                 )}
 
                 <input type='submit' className='btn btn-primary my-1' />
-                <Link className='btn btn-light my-1' to='/dashboard'>
+                <Link className='btn btn-light my-1' to='/home'>
                     Go Back
                 </Link>
             </form>
-        </Fragment>
+        </>
     );
 };
 
-CreateProfile.propTypes = {
-    createProfile: PropTypes.func.isRequired,
-};
+
 
 // Wrap createprofile 'withRouter' to access history object to redirect
 export default CreateProfile;
