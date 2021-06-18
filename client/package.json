@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@react-google-maps/api": "^2.2.0",
     "firebase": "^8.6.7",
+    "google-map-react": "^2.1.9",
     "jwt-decode": "^3.1.2",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
@@ -44,5 +50,5 @@
     ]
   },
   "description": "",
-  "proxy":"http://localhost:4000"
+  "proxy": "http://localhost:4000"
 }

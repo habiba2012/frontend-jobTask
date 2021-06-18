@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../App';
-import Logo from '../../assets/images/logo2.png';
+// import Logo from '../../assets/images/logo2.png';
 import ProfilePopper from '../ProfilePopper/ProfilePopper';
 
 const NavBar = () => {
@@ -26,19 +26,13 @@ const NavBar = () => {
             expand="lg"
             variant="light"
             fixed="top"
-            className={(isSticky || isCollapsed) ? "shadow-sm bg-white py-2" : "py-4"}>
+            className={(isSticky || isCollapsed) ? "shadow-sm bg-dark text-white py-2" : "py-4"}>
 
             <Navbar.Brand
                 as={Link} to="/"
                 className="ml-md-5"
                 style={{ color: "#3a4256", fontSize: "1.55rem" }}>
-                <img
-                    alt="Logo"
-                    src={Logo}
-                    width="140"
-                    height="140"
-                    className="d-inline-block align-top"
-                />{' '}
+                <strong>CPH FASHION<br />FESTIVAL</strong>{' '}
             </Navbar.Brand>
 
             <Navbar.Toggle onClick={() => setCollapsed(!isCollapsed ? 'show' : null)} aria-controls="responsive-navbar-nav" />

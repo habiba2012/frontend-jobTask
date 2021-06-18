@@ -23,9 +23,11 @@ const VideoBanner = () => {
             class="video-js"
             autoplay="true"
             controls="true"
+            loop="true"
             preload="auto"
             width="640"
             height="400"
+            fluid="true"
             poster="../../assets/images/banner.jpg"
             data-setup="{}"
         >

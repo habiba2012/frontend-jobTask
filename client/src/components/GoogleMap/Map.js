@@ -1,59 +1,23 @@
-import React, { useState } from 'react'
-import { GoogleMap, LoadScript, DirectionsService, DirectionsRenderer } from '@react-google-maps/api';
+import React, { useContext } from 'react';
+import { UserContext } from '../../App';
 
-const containerStyle = {
-    width: '500px',
-    height: '500px'
-};
+const GoogleMap = () => {
+    const { search } = useContext(UserContext);
 
-const location = {
-    lat: 43.6532,
-    lng: -79.3832,
-};
-
-const onLoad = marker => {
-    console.log('marker:', marker)
-}
-
-const Map = ({ origin, destination }) => {
-    const [directionResponse, setDirectionResponse] = useState(null)
     return (
-        <LoadScript
-            googleMapsApiKey="AIzaSyDs9bff1o84rXMwb_cua9CGb2nyNnOemdo"
-        >
-            <GoogleMap
-                mapContainerStyle={containerStyle}
-                location={location}
-                zoom={12}
-            >
-                {
-                    origin !== '' && destination !== '' && <DirectionsService
-                        // required
-                        options={{
-                            destination: destination,
-                            origin: origin,
-                            travelMode: 'DRIVING'
-                        }}
-                        // required
-                        callback={res => {
-                            if (res != null) {
-                                setDirectionResponse(res)
-                            }
-                        }}
+        <>
+            <iframe
+                className="my-5 w-100"
+                title="Google Map"
+                src={`https://www.google.com/maps/embed/v1/directions?key=AIzaSyDMdlO3qKX7wG6u0KUkTJuVH9IUA57oAm4&origin=Denmark+${search.pickFrom || "Søborg"}&destination=Denmark+${search.pickTo || "Vester Voldgade 83, 1552 København"}&avoid=tolls|highways`}
+                width="800"
+                height="650"
+                style={{ border: 0, borderRadius: "10px" }}
+                allowFullScreen=""
+                loading="lazy">
+            </iframe>
+        </>
+    );
+};
 
-                    />
-                }
-                {directionResponse && <DirectionsRenderer
-                    // required
-                    options={{
-                        directions: directionResponse
-                    }}
-
-                />}
-
-            </GoogleMap>
-        </LoadScript>
-    )
-}
-
-export default Map
+export default GoogleMap;

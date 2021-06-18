@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Logo from '../../../images/logo.svg';
+// import Logo from '../../../images/logo.svg';
 import './Footer.css';
 
 const Footer = () => {
@@ -32,7 +32,7 @@ const Footer = () => {
                         <div className="dk-footer-box-info">
                             <Link to="/" onClick={scrollHandler} className="footer-logo">
                                 <div className="d-flex justify-content-center">
-                                    <img src={Logo} alt="footer_logo" height="160" />
+                                    {/* <img src={Logo} alt="footer_logo" height="160" /> */}
                                 </div>
                                 <h3 className="text-center text-white mb-0">Gerez</h3>
                             </Link>
@@ -162,7 +162,7 @@ const Footer = () => {
                 <Container>
                     <Row>
                         <Col md={6} className="order-2 order-md-1">
-                            <span>Copyright © {new Date().getFullYear()}, All Rights Reserved Copenhagen Fashion Festival</span>
+                            <span>Copyright © {new Date().getFullYear()}, All Rights Reserved Gerez</span>
                         </Col>
                         <Col md={6} className="order-1 order-md-2">
                             <div className="copyright-menu">
