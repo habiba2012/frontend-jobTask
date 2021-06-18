@@ -7,7 +7,7 @@ import Destination from '../GoogleMap/Destination';
 import Footer from '../Footer/Footer.js'
 const Home = () => {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <NavBar />
             <TopHeader />
             <SliderBanner />

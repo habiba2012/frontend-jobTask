@@ -2,16 +2,14 @@ import React, { Fragment, useState } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { createProfile } from '../profile';
+// import { createProfile } from '../profile';
 
-const CreateProfile = ({ createProfile, history }) => {
+const CreateProfile = () => {
     const [formData, setFormData] = useState({
-        company: '',
-        website: '',
-        location: '',
-        status: '',
+        firstname: "",
+        lastname: "",
+
         skills: '',
-        githubusername: '',
         bio: '',
         twitter: '',
         facebook: '',
@@ -224,4 +222,4 @@ CreateProfile.propTypes = {
 };
 
 // Wrap createprofile 'withRouter' to access history object to redirect
-export default connect(null, { createProfile })(withRouter(CreateProfile));
+export default CreateProfile;

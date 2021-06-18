@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-// import Logo from '../../../images/logo.svg';
+import Logo from '../../assets/images/logo1.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -29,16 +29,13 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col md={12} lg={4}>
-                        <div className="dk-footer-box-info">
+                        <div className="dk-footer-box-info mt-5">
                             <Link to="/" onClick={scrollHandler} className="footer-logo">
                                 <div className="d-flex justify-content-center">
-                                    {/* <img src={Logo} alt="footer_logo" height="160" /> */}
+                                    <img src={Logo} alt="footer_logo" height="160" />
                                 </div>
-                                <h3 className="text-center text-white mb-0">Gerez</h3>
                             </Link>
-                            <p className="footer-info-text">
-                                Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.
-                            </p>
+
                             <div className="footer-social-link">
                                 <h3>Follow us</h3>
                                 <ul>
@@ -79,8 +76,8 @@ const Footer = () => {
                                         <FontAwesomeIcon icon={faMapMarkedAlt} />
                                     </div>
                                     <div className="contact-info">
-                                        <h3>Dhaka, Bangladesh</h3>
-                                        <p>South Manda, Dhaka-1214</p>
+                                        <h3>Copenhagen, Denmark</h3>
+                                        <p>Buddingevej 348, Søborg-2860</p>
                                     </div>
                                 </div>
                             </Col>
@@ -89,8 +86,9 @@ const Footer = () => {
                                     <div className="contact-icon">
                                         <FontAwesomeIcon icon={faPhoneVolume} />
                                     </div>
+
                                     <div className="contact-info">
-                                        <h3>+880-1910-820976</h3>
+                                        <h3>+45 52346712</h3>
                                         <p>Give us a call</p>
                                     </div>
                                 </div>
@@ -108,10 +106,10 @@ const Footer = () => {
                                             <Link to="/" onClick={scrollHandler}>About us</Link>
                                         </li>
                                         <li>
-                                            <Link to="/" onClick={scrollHandler}>Services</Link>
+                                            <Link to="/" onClick={scrollHandler}>Volunteer</Link>
                                         </li>
                                         <li>
-                                            <Link to="/" onClick={scrollHandler}>Projects</Link>
+                                            <Link to="/" onClick={scrollHandler}>Events</Link>
                                         </li>
                                         <li>
                                             <Link to="/" onClick={scrollHandler}>Our Team</Link>
@@ -162,7 +160,7 @@ const Footer = () => {
                 <Container>
                     <Row>
                         <Col md={6} className="order-2 order-md-1">
-                            <span>Copyright © {new Date().getFullYear()}, All Rights Reserved Gerez</span>
+                            <span>Copyright © {new Date().getFullYear()}, All Rights Reserved COPENHAGEN FASHION FESTIVAL</span>
                         </Col>
                         <Col md={6} className="order-1 order-md-2">
                             <div className="copyright-menu">

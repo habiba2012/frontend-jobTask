@@ -15,43 +15,48 @@ const SliderBanner = () => {
             <div className="slider-box">
                 <div className="slider1 img-fluid" style={{ marginTop: "5rem" }}>
                     <img className="slide-img" src={slide1} alt="" />
-
+                    <div className="text-box">
+                        <h3 className="text-center ">FILL UP THE APPLICATION FORM<br />
+                            AND<br />JOIN OUR FAMILY</h3>
+                    </div>
                 </div>
                 <div className="slider2 img-fluid" style={{ marginTop: "5rem" }}>
                     <img className="slide-img" src={slide2} alt="" />
                     <div className="text-box">
-                        <h3 className="text-center ">COPENHAGEN FASHION FESTIVAL</h3>
+                        <h3 className="text-center ">FILL UP THE APPLICATION FORM<br />
+                            AND<br />JOIN OUR FAMILY</h3>
                     </div>
                 </div>
                 <div className="slider3 img-fluid" style={{ marginTop: "5rem" }}>
                     <img className="slide-img" src={slide3} alt="" />
                     <div className="text-box">
-                        <h3 className="text-center">COPENHAGEN FASHION FESTIVAL</h3>
+                        <h3 className="text-center">FILL UP THE APPLICATION FORM <br />
+                            AND<br />JOIN OUR FAMILY</h3>
                         <span></span>
                     </div>
                 </div>
                 <div className="slider4 img-fluid" style={{ marginTop: "5rem" }}>
                     <img className="slide-img" src={slide4} alt="" />
                     <div className="text-box">
-                        <h3 className="text-center">COPENHAGEN FASHION FESTIVAL</h3>
+                        <h3 className="text-center">FILL UP THE APPLICATION FORM<br />AND<br />JOIN OUR FAMILY</h3>
                     </div>
                 </div>
                 <div className="slider5 img-fluid" style={{ marginTop: "5rem" }}>
                     <img className="slide-img" src={slide5} alt="" />
                     <div className="text-box">
-                        <h3 className="text-center">COPENHAGEN FASHION FESTIVAL</h3>
+                        <h3 className="text-center">FILL UP THE APPLICATION FORM<br />AND<br />JOIN OUR FAMILY</h3>
                     </div>
                 </div>
                 <div className="slider5 img-fluid" style={{ marginTop: "5rem" }}>
                     <img className="slide-img" src={slide6} alt="" />
                     <div className="text-box">
-                        <h3 className="text-center">COPENHAGEN FASHION FESTIVAL</h3>
+                        <h3 className="text-center">FILL UP THE APPLICATION FORM<br />AND<br />JOIN OUR FAMILY</h3>
                     </div>
                 </div>
                 <div className="slider5 img-fluid" style={{ marginTop: "5rem" }}>
                     <img className="slide-img" src={slide7} alt="" />
                     <div className="text-box">
-                        <h3 className="text-center">COPENHAGEN FASHION FESTIVAL</h3>
+                        <h3 className="text-center">FILL UP THE APPLICATION FORM<br />AND<br />JOIN OUR FAMILY</h3>
                     </div>
                 </div>
             </div>

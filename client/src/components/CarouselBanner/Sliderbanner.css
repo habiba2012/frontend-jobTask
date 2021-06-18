@@ -31,7 +31,7 @@
     }
   }
   .text-box {
-    width: 400px;
+    width: 500px;
     position: absolute;
     top: 12rem;
     left: 50%;
@@ -40,7 +40,6 @@
     /* border: 1px solid red; */
   }
   .text-box span {
-    background-color: rgb(87, 2, 80);
     height: 2px;
     width: 100px;
     margin-top: 10px;
